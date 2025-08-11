@@ -50,8 +50,7 @@ Vendor E (SPDX):         "SPDXRef-Package-log4j-core-2.14.1"
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/yourusername/rosettabom
-cd rosettabom
+git clone https://github.com/swastik-mukherjee/RosettaBOM.git
 node src/index.js
 ```
 
