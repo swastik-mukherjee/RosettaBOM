@@ -1,0 +1,33 @@
+{
+  "name": "rosettabom",
+  "version": "1.0.0",
+  "description": "🏛️ RosettaBOM - The Universal SBOM Translator. Decode, translate, and unify component identifiers across SBOM formats.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node tests/test.js",
+    "demo": "node src/index.js"
+  },
+  "keywords": [
+    "sbom",
+    "cybersecurity", 
+    "tokenizer",
+    "component-analysis",
+    "vulnerability-management",
+    "spdx",
+    "cyclonedx",
+    "purl",
+    "supply-chain-security",
+    "rosetta-stone"
+  ],
+  "author": "Swastik Mukherjee",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swastik-mukherjee/RosettaBOM"
+  },
+  "homepage": "https://github.com/swastik-mukherjee/RosettaBOM#readme",
+  "bugs": {
+    "url": "https://github.com/swastik-mukherjee/RosettaBOM/issues"
+  }
+}
