@@ -1,0 +1,119 @@
+log4j-core-2.14.1
+spring-boot-2.5.0
+junit-4.13.2
+jackson-databind-2.12.3
+slf4j-api-1.7.30
+commons-lang3-3.12.0
+guava-30.1.1-jre
+hibernate-core-5.4.32
+netty-all-4.1.65
+apache-commons-io-2.8.0
+org.apache.logging.log4j:log4j-core:2.14.1
+org.springframework.boot:spring-boot:2.5.0
+junit:junit:4.13.2
+com.fasterxml.jackson.core:jackson-databind:2.12.3
+org.slf4j:slf4j-api:1.7.30
+org.apache.commons:commons-lang3:3.12.0
+com.google.guava:guava:30.1.1-jre
+org.hibernate:hibernate-core:5.4.32
+io.netty:netty-all:4.1.65
+commons-io:commons-io:2.8.0
+pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1
+pkg:maven/org.springframework.boot/spring-boot@2.5.0
+pkg:maven/junit/junit@4.13.2
+pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.12.3
+pkg:maven/org.slf4j/slf4j-api@1.7.30
+pkg:maven/org.apache.commons/commons-lang3@3.12.0
+pkg:maven/com.google.guava/guava@30.1.1-jre
+pkg:maven/org.hibernate/hibernate-core@5.4.32
+pkg:maven/io.netty/netty-all@4.1.65
+pkg:maven/commons-io/commons-io@2.8.0
+pkg:npm/react@17.0.2
+pkg:npm/lodash@4.17.21
+pkg:npm/@angular/core@12.1.0
+pkg:npm/express@4.17.1
+pkg:npm/axios@0.21.1
+pkg:pypi/django@3.2.5
+pkg:pypi/requests@2.25.1
+pkg:pypi/numpy@1.21.0
+pkg:pypi/pandas@1.3.0
+pkg:pypi/flask@2.0.1
+
+
+
+# Container Images
+nginx-1.21.0-alpine
+redis-6.2.4
+postgres-13.3
+mysql-8.0.26
+ubuntu-20.04
+alpine-3.14
+
+# NPM Packages (Scoped)
+@angular/core-14.2.0
+@types/node-16.11.7
+@babel/core-7.15.5
+@vue/cli-4.5.15
+@tensorflow/tfjs-3.9.0
+
+# Python Packages
+Django-4.1.0
+requests-2.27.1
+numpy-1.21.2
+pandas-1.3.3
+tensorflow-2.6.0
+scikit-learn-1.0.2
+
+# Go Modules
+github.com/gin-gonic/gin-v1.7.4
+github.com/gorilla/mux-v1.8.0
+go.uber.org/zap-v1.19.1
+
+# Rust Crates
+serde-1.0.130
+tokio-1.12.0
+reqwest-0.11.4
+
+# Ruby Gems
+rails-7.0.0
+devise-4.8.0
+rspec-3.10.0
+
+# Vulnerable Components (Historical)
+log4j-core-2.14.1
+log4j-core-2.15.0
+spring-framework-5.3.18
+jackson-databind-2.9.10.7
+struts2-core-2.5.26
+apache-commons-collections-3.2.1
+
+# Enterprise Components
+oracle-jdbc-19.3.0
+microsoft-sqlserver-jdbc-9.4.0
+ibm-db2-jdbc-11.5.4
+sap-jco-3.1.0
+
+# Security Tools
+snyk-cli-1.726.0
+sonarqube-scanner-4.7.0
+checkmarx-cli-2.0.51
+
+# Cloud Native
+kubernetes-client-12.0.1
+docker-java-3.2.12
+terraform-provider-aws-3.74.0
+
+# More Complex Maven Coordinates
+org.apache.httpcomponents:httpclient:4.5.13
+com.fasterxml.jackson.core:jackson-core:2.13.0
+org.springframework.security:spring-security-core:5.6.0
+org.hibernate.validator:hibernate-validator:6.2.0
+org.slf4j:slf4j-log4j12:1.7.32
+
+# More Complex PURLs
+pkg:maven/org.apache.httpcomponents/httpclient@4.5.13
+pkg:npm/@types/react@17.0.34
+pkg:pypi/scikit-learn@1.0.2
+pkg:gem/rails@7.0.0
+pkg:cargo/serde@1.0.130
+pkg:golang/github.com/gin-gonic/gin@v1.7.4
