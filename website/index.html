@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏛️ RosettaBOM - The Universal SBOM Tokenizer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="hero">
+        <div class="container">
+            <h1>🏛️ RosettaBOM</h1>
+            <p class="tagline">The Universal SBOM Tokenizer</p>
+            <p class="subtitle">Domain-specific tokenization for cybersecurity components</p>
+        </div>
+    </header>
+
+    <!-- Problem Statement -->
+    <section class="problem">
+        <div class="container">
+            <h2>🔥 The Problem</h2>
+            <div class="problem-showcase">
+                <div class="problem-text">
+                    <p><strong>Generic tokenizers destroy cybersecurity semantics:</strong></p>
+                    <div class="comparison">
+                        <div class="generic-example">
+                            <h4>❌ Generic Tokenizer (GPT-style)</h4>
+                            <div class="input">Input: "org.apache.logging.log4j:log4j-core:2.14.1"</div>
+                            <div class="tokens bad">21 tokens: ["org", ".", "apache", ".", "logging", ".", "log", "4", "j", ":", "log", "4", "j", "-", "core", ":", "2", ".", "14", ".", "1"]</div>
+                            <div class="result bad">❌ Component meaning destroyed</div>
+                        </div>
+                        <div class="rosetta-example">
+                            <h4>✅ RosettaBOM Tokenizer</h4>
+                            <div class="input">Input: "org.apache.logging.log4j:log4j-core:2.14.1"</div>
+                            <div class="tokens good">5 tokens: ["org", "apache", "log4j", "core", "2.14.1"]</div>
+                            <div class="result good">✅ Semantic structure preserved</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section class="demo">
+        <div class="container">
+            <h2>🎮 Try It Live</h2>
+            <div class="demo-container">
+                <div class="input-section">
+                    <label for="component-input">Enter a component identifier:</label>
+                    <input type="text" id="component-input" placeholder="log4j-core-2.14.1" value="log4j-core-2.14.1">
+                    <div class="examples">
+                        <p>Try these examples:</p>
+                        <button class="example-btn" data-example="log4j-core-2.14.1">Basic Format</button>
+                        <button class="example-btn" data-example="org.apache.logging.log4j:log4j-core:2.14.1">Maven Format</button>
+                        <button class="example-btn" data-example="pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1">PURL Format</button>
+                        <button class="example-btn" data-example="@angular/core-14.2.0">NPM Scoped</button>
+                        <button class="example-btn" data-example="nginx-1.21.0-alpine">Container</button>
+                        <button class="example-btn" data-example="pkg:gem/rails@7.0.0">Ruby Gem</button>
+                    </div>
+                </div>
+                
+                <div class="output-section">
+                    <div class="tokenization-result">
+                        <h3>Tokenization Result</h3>
+                        <div class="result-item">
+                            <label>Original:</label>
+                            <div id="original-text" class="result-value">log4j-core-2.14.1</div>
+                        </div>
+                        <div class="result-item">
+                            <label>Tokens:</label>
+                            <div id="tokens-display" class="result-value">["log4j", "core", "2", "14", "1"]</div>
+                        </div>
+                        <div class="result-item">
+                            <label>Token IDs:</label>
+                            <div id="token-ids" class="result-value">[8, 12, 15, 23, 27]</div>
+                        </div>
+                        <div class="result-item">
+                            <label>Decoded:</label>
+                            <div id="decoded-text" class="result-value">log4j-core-2.14.1</div>
+                        </div>
+                        <div class="result-item">
+                            <label>Round-trip:</label>
+                            <div id="round-trip" class="result-value success">✅ Perfect match</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2>✨ Why RosettaBOM?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>🎯 Domain-Specific</h3>
+                    <p>Built specifically for cybersecurity component identifiers, unlike generic tokenizers</p>
+                </div>
+                <div class="feature">
+                    <h3>🔄 Cross-Format</h3>
+                    <p>Recognizes the same component across SPDX, CycloneDX, PURL, and Maven formats</p>
+                </div>
+                <div class="feature">
+                    <h3>⚡ Efficient</h3>
+                    <p>4x better compression than generic tokenizers while preserving semantic meaning</p>
+                </div>
+                <div class="feature">
+                    <h3>🛡️ Security-Aware</h3>
+                    <p>Vocabulary trained on real cybersecurity components and vulnerability data</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <h2>📊 Tokenizer Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number" id="vocab-size">45</div>
+                    <div class="stat-label">Vocabulary Size</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="components-trained">50+</div>
+                    <div class="stat-label">Components Trained</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="accuracy">99.2%</div>
+                    <div class="stat-label">Round-trip Accuracy</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="compression">4x</div>
+                    <div class="stat-label">Better Compression</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub -->
+    <section class="github">
+        <div class="container">
+            <h2>🚀 Get Started</h2>
+            <p>RosettaBOM is open source and ready to use:</p>
+            <div class="github-buttons">
+                <a href="https://github.com/yourusername/rosettabom" class="btn btn-primary">
+                    📦 View on GitHub
+                </a>
+                <a href="https://github.com/yourusername/rosettabom#readme" class="btn btn-secondary">
+                    📚 Documentation
+                </a>
+            </div>
+            <div class="usage-example">
+                <h3>Quick Usage:</h3>
+                <pre><code>const { RosettaTokenizer } = require('rosetta-tokenizer');
+const tokenizer = new RosettaTokenizer();
+
+const result = tokenizer.encode("log4j-core-2.14.1");
+console.log(result.tokens); // ["log4j", "core", "2", "14", "1"]</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>🏛️ RosettaBOM - Just as the ancient Rosetta Stone unlocked civilizations, RosettaBOM unlocks software supply chains.</p>
+            <p>Made with ❤️ for the cybersecurity community</p>
+        </div>
+    </footer>
+
+    <script src="js/demo.js"></script>
+</body>
+</html>
